@@ -1,0 +1,26 @@
+{
+  "name": "football-digest",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node --env-file=.env app.js",
+    "dev": "node --env-file=.env --watch app.js",
+    "test": "echo \"Error, no test specified\" && return 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cklgaming/football-digest.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cklgaming/football-digest/issues"
+  },
+  "homepage": "https://github.com/cklgaming/football-digest#readme",
+  "description": "",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
