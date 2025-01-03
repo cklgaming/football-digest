@@ -1,5 +1,6 @@
 import express from 'express';
 import path from 'path';
+import router from './routes/routes.js';
 import url from 'url';
 
 const PORT = process.env.PORT;
