@@ -1,6 +1,19 @@
 services:
   server:
+    container_name: ${HOST}
     build: ./app
+    env_file: .env
     ports:
-      - "3000:3000"
+      - ${PORT}:${PORT}
+    depends_on:
+      - mongo
 
+  mongo:
+    image: mongo:8.0
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo-data:/data/db
+
+volumes:
+  mongo-data:
