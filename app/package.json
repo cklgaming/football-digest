@@ -4,8 +4,8 @@
   "main": "app.js",
   "type": "module",
   "scripts": {
-    "start": "node --env-file=.env .",
-    "dev": "node --env-file=.env --watch .",
+    "start": "node --env-file=../env .",
+    "dev": "node --env-file=../env --watch .",
     "test": "echo \"Error, no test specified\" && return 1"
   },
   "repository": {
