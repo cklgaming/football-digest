@@ -1,7 +1,7 @@
 import express from 'express';
 import { MongoClient } from 'mongodb';
 import path from 'path';
-import router from './routes/routes.js';
+import router from './routes.js';
 import url from 'url';
 
 const DB_USER = process.env.MONGO_INITDB_ROOT_USERNAME;
@@ -20,7 +20,7 @@ const db = client.db(DB_NAME);
 // Not used yet, update when creating collection
 const collection = db.collection(DB_COLLECTION);
 
-const connect = async () => {
+export default main = async () => {
     try {
         await client.connect();
         console.log('Connected to Mongo!');

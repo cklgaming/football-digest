@@ -1,5 +1,5 @@
-import decrypt from './db/decrypt.ts';
-import encrypt from './db/encrypt.ts';
+import decrypt from './decrypt.js';
+import encrypt from './encrypt.js';
 import express from 'express';
 
 let loggedIn = false;
